@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "env-cmd -f ./config/dev.env nodemon server.js",
+    "test": "env-cmd -f ./config/test.env jest ./test --watch --runInBand"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.4.1",
+    "mongoose": "^5.8.7",
+    "nodemon": "^2.0.2"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.0.1",
+    "jest": "^24.9.0",
+    "mongodb-memory-server": "^6.2.1",
+    "supertest": "^4.0.2"
+  }
+}
